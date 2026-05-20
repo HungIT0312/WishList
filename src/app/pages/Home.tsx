@@ -3,18 +3,13 @@ import { useWishlist } from "../store/WishlistContext";
 import { useNavigate } from "react-router";
 import { Plus, LayoutGrid, Trash, Calendar, Moon, Sun } from "lucide-react";
 
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogFooter,
-} from "../components/ui/Dialog";
 import { format } from "date-fns";
 import { useTheme } from "next-themes";
 import { Button } from "../components/ui/Button";
 import { Label } from "../components/ui/Label";
 import { Input } from "../components/ui/Input";
+import { Dialog, DialogContent, DialogTitle } from "@radix-ui/react-dialog";
+import { DialogHeader, DialogFooter } from "../components/ui/Dialog";
 
 const ICONS = ["📦", "💻", "❤️", "🏠", "🎓", "👨‍👩‍👧", "✈️", "🎮", "🛒", "🚗"];
 

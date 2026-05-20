@@ -17,20 +17,9 @@ import {
   Sun,
 } from "lucide-react";
 import { CATEGORIES, PRIORITIES, STATUSES } from "../constants";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogFooter,
-} from "../components/ui/Dialog";
+
 import { Label } from "../components/ui/Label";
 
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "../components/ui/Popover";
 import { useTheme } from "next-themes";
 import {
   Select,
@@ -43,6 +32,13 @@ import { DraggableRow } from "../components/DraggableRow";
 import { Button } from "../components/ui/Button";
 import { Input } from "../components/ui/Input";
 import { Textarea } from "../components/ui/Textarea";
+import { Dialog, DialogContent, DialogTitle } from "@radix-ui/react-dialog";
+import { DialogHeader, DialogFooter } from "../components/ui/Dialog";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@radix-ui/react-popover";
 
 export const BoardDetails = () => {
   const { id } = useParams<{ id: string }>();
