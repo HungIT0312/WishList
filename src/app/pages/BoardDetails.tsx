@@ -16,8 +16,6 @@ import {
   Moon,
   Sun,
 } from "lucide-react";
-import { Button } from "../components/ui/Button";
-import { DraggableRow } from "../components/DraggableRow";
 import { CATEGORIES, PRIORITIES, STATUSES } from "../constants";
 import {
   Dialog,
@@ -34,7 +32,6 @@ import {
   PopoverTrigger,
 } from "../components/ui/Popover";
 import { useTheme } from "next-themes";
-import { Textarea } from "../components/ui/textarea";
 import {
   Select,
   SelectTrigger,
@@ -42,7 +39,10 @@ import {
   SelectContent,
   SelectItem,
 } from "@radix-ui/react-select";
-import { Input } from "../components/ui/input";
+import { DraggableRow } from "../components/DraggableRow";
+import { Button } from "../components/ui/Button";
+import { Input } from "../components/ui/Input";
+import { Textarea } from "../components/ui/Textarea";
 
 export const BoardDetails = () => {
   const { id } = useParams<{ id: string }>();
