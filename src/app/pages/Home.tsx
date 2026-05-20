@@ -3,7 +3,6 @@ import { useWishlist } from "../store/WishlistContext";
 import { useNavigate } from "react-router";
 import { Plus, LayoutGrid, Trash, Calendar, Moon, Sun } from "lucide-react";
 
-import { Label } from "../components/ui/Label";
 import {
   Dialog,
   DialogContent,
@@ -13,8 +12,9 @@ import {
 } from "../components/ui/Dialog";
 import { format } from "date-fns";
 import { useTheme } from "next-themes";
-import { Input } from "../components/ui/input";
 import { Button } from "../components/ui/Button";
+import { Label } from "../components/ui/Label";
+import { Input } from "../components/ui/Input";
 
 const ICONS = ["📦", "💻", "❤️", "🏠", "🎓", "👨‍👩‍👧", "✈️", "🎮", "🛒", "🚗"];
 
