@@ -27,21 +27,22 @@ import {
   DialogFooter,
 } from "../components/ui/Dialog";
 import { Label } from "../components/ui/Label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "../components/ui/Select";
+
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "../components/ui/Popover";
 import { useTheme } from "next-themes";
-import { Input } from "../components/ui/input";
 import { Textarea } from "../components/ui/textarea";
+import {
+  Select,
+  SelectTrigger,
+  SelectValue,
+  SelectContent,
+  SelectItem,
+} from "@radix-ui/react-select";
+import { Input } from "../components/ui/input";
 
 export const BoardDetails = () => {
   const { id } = useParams<{ id: string }>();

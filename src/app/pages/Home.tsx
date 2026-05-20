@@ -14,7 +14,6 @@ import {
 import { format } from "date-fns";
 import { useTheme } from "next-themes";
 import { Input } from "../components/ui/input";
-import { Button } from "../components/ui/Button";
 
 const ICONS = ["📦", "💻", "❤️", "🏠", "🎓", "👨‍👩‍👧", "✈️", "🎮", "🛒", "🚗"];
 
