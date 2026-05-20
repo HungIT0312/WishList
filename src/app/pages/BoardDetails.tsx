@@ -18,8 +18,6 @@ import {
 } from "lucide-react";
 import { CATEGORIES, PRIORITIES, STATUSES } from "../constants";
 
-import { Label } from "../components/ui/Label";
-
 import { useTheme } from "next-themes";
 import {
   Select,
@@ -33,12 +31,13 @@ import { Button } from "../components/ui/Button";
 import { Input } from "../components/ui/Input";
 import { Textarea } from "../components/ui/Textarea";
 import { Dialog, DialogContent, DialogTitle } from "@radix-ui/react-dialog";
-import { DialogHeader, DialogFooter } from "../components/ui/Dialog";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@radix-ui/react-popover";
+import { Label } from "@radix-ui/react-label";
+import { DialogHeader } from "../components/ui/Dialog";
 
 export const BoardDetails = () => {
   const { id } = useParams<{ id: string }>();
